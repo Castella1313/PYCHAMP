@@ -1,0 +1,135 @@
+<html>
+<head>
+	<script type = "text/javascript" src="project.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Abril">
+<link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+	<style>
+body{
+font-weight:bold;
+font-size:20px;
+background-image:linear-gradient(#FFC0CB,#800080,#FFC0CB);
+font-family: 'Gayathri', sans-serif;
+}
+.quizes{
+height:2700px;
+width:1000px;
+background-color:white;
+margin-left:220px;
+margin-top:100px;
+background-color:#FCBACB
+}
+.quiz{
+height:360px;
+width:700px;
+background-color:lightgreen;
+margin-left:100px;
+margin-top:40px;
+padding:50px 50px 50px 50px;
+color:#FE7D6A;
+font-size:30px;
+background-color:lightgreen;
+}
+.question{
+color:black;
+font-weight:bold;
+font-size:40px;
+
+}
+.title{
+	color:purple;
+	font-weight:bold;
+	font-size:80px;
+	text-align:center;
+	margin-top:80px;
+	font-family: 'Orbitron', sans-serif;
+}
+input{
+	margin-bottom:10px;
+	color:pink;
+}
+button{
+	height:100;
+	width:200;
+	background-color:#FC4C4E;
+	text-align:center;
+	font-size:40px;
+	border-radius:10%;
+	border:5px solid #FDA4BA;
+	margin-left:400px;
+	margin-top:50px;
+}
+button:hover{
+	background-color:purple;
+	color:white;
+}
+#results{
+	color:orange;
+	font-size:50px;
+}
+#sco{
+	color:black;
+	margin-top:30px;
+	text-align:center;
+	background-color:lightgreen;
+	height:360px;
+	width:700px;
+	padding:50px 50px 50px 50px;
+	margin-left:100px;
+margin-top:40px;
+}
+	</style>
+	</head>
+	<body>
+		<div class="title">QUIZ</div>
+		<div class="quizes">
+			<div class = 'quiz'>
+			<div class="question">
+					1. Identify the wrong variable name.</div><br>
+					<input value = "incorrect" onclick = "func(this.value)" type="radio">Simran_bh_<br>
+					<input value = "correct" onclick = "func(this.value)" type="radio">1abc<br>
+					<input value = "incorrect" onclick = "func(this.value)" type="radio">_a<br>
+				<input value = "incorrect" onclick = "func(this.value)" type="radio">simran13<br>	
+			</div>
+			<div class = 'quiz'>
+					<div class="question">
+					2. Find out the output of this program<br>a = 6<br>b = 2<br>print(a * b)</div><br>
+					<input type="radio"  onclick = "func(this.value)" value = "incorrect">8<br>
+					<input type="radio" onclick = "func(this.value)" value = "incorrect">18<br>
+					<input type="radio" onclick = "func(this.value)" value = "incorrect">16<br>
+					<input type="radio" onclick = "func(this.value)" value = "correct">12<br>	
+		</div>
+		<div class = 'quiz'>
+			<div class="question">
+					3. Identify the output <br>a = 5<br>b = 4<br>print("The remainder is",a % b) </div><br>
+					<input type="radio" onclick = "func(this.value)" value = "incorrect">The reminder is 2 <br>
+					<input type="radio" onclick = "func(this.value)" value = "correct">The reminder is 1<br>
+					<input type="radio" onclick = "func(this.value)" value = "incorrect">The reminder is 3<br>
+					<input type="radio" onclick = "func(this.value)" value = "incorrect">The reminder is 5<br>	
+			</div>
+		<div class = 'quiz'>	
+			<div class="question">
+					4. What type of operator is this ( = ).</div><br>
+					<input type="radio" onclick = "func(this.value)" value = "incorrect">Equals to<br>
+					<input type="radio" onclick = "func(this.value)" value = "incorrect">Equal<br>
+					<input type="radio" onclick = "func(this.value)" value = "correct">Assignment<br>
+					<input type="radio" onclick = "func(this.value)" value = "incorrect">Equality<br>	
+			</div>
+		<div class = 'quiz'>
+			<div class="question">
+					5. What type of operator is this ( % ).</div><br>
+					<input type="radio" value = "incorrect" onclick = "func(this.value)" >Divider<br>
+					<input type="radio" onclick = "func(this.value)" value = "incorrect">Division<br>
+					<input type="radio" onclick = "func(this.value)" value = "correct">Modulus<br>
+					<input type="radio" onclick = "	func(this.value)" value = "incorrect">Percentage<br>	
+			</div>
+		
+				<button type = "button" onclick = "myresult()">Submit</button>
+				
+				
+</div>
+
+
+	</body>
+</html>
