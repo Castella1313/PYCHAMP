@@ -87,6 +87,12 @@ button:hover{
 	margin-left:100px;
 margin-top:40px;
 }
+.subheader{
+	color:black;
+	font-weight:bold;
+	font-size:40px;
+
+}
 	</style>
 	</head>
 	<body>
@@ -160,8 +166,23 @@ margin-top:40px;
 					<input type="radio" onclick = "	func(this.value)" value = "incorrect">Percentage<br>	
 			</div>
 		
-				<center><button type = "button" onclick = "myresult()">Submit</button></center>
-				
+				<center><button type = "button" id="myBtn" >Submit</button></center>
+		
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content">
+			<span class="close">&times;</span>
+				<p class="title" id="remark">Outstanding</p>
+				<div style="text-align: center;">
+					<p class="subheader" style="display: inline">Your score : </p>
+					<p class="subheader" style="display: inline" id="score"></p>
+					<p class="subheader" style="display: inline" > / 5</p>
+				</div>
+			</div>
+		
+		</div>	
 				
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
