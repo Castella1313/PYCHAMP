@@ -299,19 +299,38 @@ footer div{
 	padding:100px 100px 100px 100px;
 	
 	margin-top:100px;
-
+	
 }
-.lessons{
+
+
+/* .lessons{
 	color:white;
 	animation-name:py;
-	animation-duration:3s;
+	animation-duration:8s;
 	animation-delay:1s; 
 	animation-iteration-count:infinite;
 	text-align:center;
 	animation-direction:alternate;
 	margin-top:100px;
 	border-bottom:3px solid gray;
+	animation: type 4s steps(22);
+	overflow:hidden;
+	white-space: nowrap;
+	font-family:consolas;
+	border-right:4px solid black;
+	width:22ch;
 }
+@keyframes type {
+	0%{
+		width:0ch;
+	}
+	100%{
+		width:7ch;
+	}
+	from {background-color: red;}
+	to {background-color: yellowgreen;}
+	} */
+
 .def{
 	color:#6A0DAD;
 	font-size:30px;
@@ -398,5 +417,38 @@ input:focus{
 	box-shadow:4px 4px 4px 4px blue;
 
 }
-
+.ml2 {
+	font-weight: 900;
+	font-size: 3.6em;
+	margin-left: 600px;
+	
+	
+	
+		
+	
+	}
+	@keyframes py{
+		0% {color:red;}
+		20% {color:pink;}
+		40% {color:yellow;}
+		60%{color:blueviolet;}
+		80%{color:rgb(238, 144, 144);}
+		100%{color:rgb(0, 38, 255);}
+	
+	}
+  
+  
+  .ml2 .letter {
+	display: inline-block;
+	line-height: 1em;
+	color: black;
+	letter-spacing: 2px;
+	font-size: 100px;
+	
+	animation-name:py;
+		animation-duration:5s;
+		animation-delay:2s; 
+		animation-iteration-count:infinite;
+		font-family: 'Orbitron', sans-serif;
+  }
 
