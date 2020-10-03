@@ -2,7 +2,7 @@
 A website teaching python to the very beginners, where beginners can learn python and also test their understanding in the form of a quiz.
 
 # IMPORTANT INSTRUCTION
-Get the issue assigned to you before start working on it.
+Get the issue assigned to you before start working on it.<br>
 Don't create direct pull requests, if the issue doesn't exist, create the issue, get it assigned and start working on it :)
 
 
