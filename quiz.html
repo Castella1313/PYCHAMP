@@ -1,10 +1,13 @@
 <html>
 <head>
-	<script type = "text/javascript" src="project.js"></script>
+	
+	<link rel="stylesheet" href="project.css">
 	<link href="https://fonts.googleapis.com/css?family=Abril">
 <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/95dfb992ec.js" crossorigin="anonymous"></script>
+
 	<style>
 body{
 font-weight:bold;
@@ -13,19 +16,20 @@ background-image:linear-gradient(#FFC0CB,#800080,#FFC0CB);
 font-family: 'Gayathri', sans-serif;
 }
 .quizes{
-height:2700px;
-width:1000px;
+height:auto;
+width:auto;
 background-color:white;
-margin-left:220px;
+
 margin-top:100px;
 background-color:#FCBACB
 }
 .quiz{
-height:360px;
-width:700px;
+height:auto;
+width:auto;
 background-color:lightgreen;
-margin-left:100px;
-margin-top:40px;
+margin-left:10px;
+margin-right:10px;
+margin-top:28px;
 padding:50px 50px 50px 50px;
 color:#FE7D6A;
 font-size:30px;
@@ -34,7 +38,7 @@ background-color:lightgreen;
 .question{
 color:black;
 font-weight:bold;
-font-size:40px;
+font-size:24px;
 
 }
 .title{
@@ -45,9 +49,13 @@ font-size:40px;
 	margin-top:80px;
 	font-family: 'Orbitron', sans-serif;
 }
+.container{
+	font-size:24px;
+}
 input{
-	margin-bottom:10px;
-	color:pink;
+	
+	margin-right:0px;
+	
 }
 button{
 	height:100;
@@ -57,7 +65,7 @@ button{
 	font-size:40px;
 	border-radius:10%;
 	border:5px solid #FDA4BA;
-	margin-left:400px;
+	
 	margin-top:50px;
 }
 button:hover{
@@ -82,9 +90,34 @@ margin-top:40px;
 	</style>
 	</head>
 	<body>
+
+
+		<nav>
+			<div id="nav-top">
+				<a href="index.html"><li class="logo"><div class="fab fa-python"></div> PYCHAMP</li> </a>
+			  
+			  <div id="menu-btn">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			  </div>	
+			</div>
+	
+			<ul id="links">
+			  <li><a href="./home.html">Home</a></li>
+			  <li><a href="./lesson.html">Lessons</a></li>
+			  <li><a href="./quiz.html">Quiz</a></li>
+			  <li><a href="./signup.html">Sign Up</a></li>
+			  
+	
+			</ul>
+		  </nav>
+		  <br>
+
+
 		<div class="title">QUIZ</div>
-		<div class="quizes">
-			<div class = 'quiz'>
+		<div class="quizes container">
+			<div class = 'quiz container'>
 			<div class="question">
 					1. Identify the wrong variable name.</div><br>
 					<input value = "incorrect" onclick = "func(this.value)" type="radio">Simran_bh_<br>
@@ -111,10 +144,12 @@ margin-top:40px;
 		<div class = 'quiz'>	
 			<div class="question">
 					4. What type of operator is this ( = ).</div><br>
+					<form>
 					<input type="radio" onclick = "func(this.value)" value = "incorrect">Equals to<br>
 					<input type="radio" onclick = "func(this.value)" value = "incorrect">Equal<br>
 					<input type="radio" onclick = "func(this.value)" value = "correct">Assignment<br>
-					<input type="radio" onclick = "func(this.value)" value = "incorrect">Equality<br>	
+					<input type="radio" onclick = "func(this.value)" value = "incorrect">Equality<br>
+				</form>	
 			</div>
 		<div class = 'quiz'>
 			<div class="question">
@@ -125,11 +160,11 @@ margin-top:40px;
 					<input type="radio" onclick = "	func(this.value)" value = "incorrect">Percentage<br>	
 			</div>
 		
-				<button type = "button" onclick = "myresult()">Submit</button>
+				<center><button type = "button" onclick = "myresult()">Submit</button></center>
 				
 				
 </div>
-
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type = "text/javascript" src="project.js"></script>
 	</body>
 </html>
