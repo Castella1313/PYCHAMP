@@ -393,6 +393,7 @@ input{
 	color:white;
 	border-radius:30px;
 	border:4px solid white;
+	outline:none;
 }
 input:focus{
 	box-shadow:4px 4px 4px 4px blue;
