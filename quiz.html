@@ -87,6 +87,18 @@ button:hover{
 	margin-left:100px;
 margin-top:40px;
 }
+
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+
 	</style>
 	</head>
 	<body>
@@ -114,8 +126,9 @@ margin-top:40px;
 		  </nav>
 		  <br>
 
+		
 
-		<div class="title">QUIZ</div>
+		<div class="title"><span class="blinking">QUIZ</span></div>
 		<div class="quizes container">
 			<div class = 'quiz container'>
 			<div class="question">
