@@ -400,6 +400,42 @@ input:focus{
 
 }
 
+
+
+/* Typewriter Animation */
+.typewriter{
+	width: max-content;
+	margin-left:47%;
+	transform: translateX(-47%);
+}
+.typewriter h1 {
+	/* font-family:  */
+	overflow: hidden; 
+	border-right: .15em solid orange; 
+	white-space: nowrap; 
+	margin: 0 auto; 
+	letter-spacing: .15em; 
+	animation: 
+	  typing 4.5s steps(70, end) .5s infinite,
+	  blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: #ee4646;
+	border-width: 2px; }
+  }
+
+
+  /* Ends */
+
 /* The Modal (background) */
 .modal {
 	display: none; /* Hidden by default */
@@ -437,3 +473,4 @@ input:focus{
 	text-decoration: none;
 	cursor: pointer;
 }
+
