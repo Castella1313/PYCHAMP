@@ -402,6 +402,22 @@ input:focus{
 
 
 
+#comment{
+	height:200px;
+	width:300px;
+	color:white;
+	border-radius:30px;
+	border:4px solid white;
+	background-color:pink;
+	font-size:26px;
+}
+
+#comment:focus{
+	box-shadow:4px 4px 4px 4px blue;
+
+}
+
+
 /* Typewriter Animation */
 .typewriter{
 	width: max-content;
