@@ -33,14 +33,14 @@ function func(x){
 		{
 			$("#o2").show();
 		},
-		5000
+		3000
 	)
 	setTimeout(
 		function()
 		{
 			$("#o3").show();
 		},
-		10000
+		5000
 	)
 
 // Get the modal
